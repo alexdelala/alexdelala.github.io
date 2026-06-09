@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>አሌክስ ደላላ ድሬደዋ | Ethiopia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+  <!-- NAV BAR -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">🇪🇹</div>
+          <div>
+            <span class="text-2xl font-bold text-blue-700">አሌክስ </span>
+            <span class="text-2xl font-semibold">ደላላ ድሬ</span>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8 font-medium">
+          <a href="#home" class="hover:text-blue-600 transition">መነሻ ገፅ</a>
+          <a href="#services" class="hover:text-blue-600 transition">አገልግሎቶቻችን</a>
+          <a href="#offices" class="hover:text-blue-600 transition">ቢሮዎቻችን</a>
+          <a href="#kobo" class="hover:text-blue-600 transition">ምን እናግዝዎ</a>
+          <a href="#contact" class="hover:text-blue-600 transition">ያግኙን</a>
+        </div>
+
+        <button onclick="toggleMobileMenu()" class="md:hidden text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t py-4">
+      <div class="flex flex-col px-6 space-y-4 font-medium">
+        <a href="#home" onclick="toggleMobileMenu()">መነሻ ገፅ</a>
+        <a href="#services" onclick="toggleMobileMenu()">አገልግሎቶቻችን</a>
+        <a href="#offices" onclick="toggleMobileMenu()">ቢሮዎቻችን</a>
+        <a href="#kobo" onclick="toggleMobileMenu()">ምን እናግዝዎ</a>
+        <a href="#contact" onclick="toggleMobileMenu()">ያግኙን</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NEWS TICKER -->
+  <div class="news-ticker">
+    <div class="news-ticker-content">
+      <span>✅ በድሬደዋና አከባቢው ማንኛውንም የድለላ ስራ እንሰራለን</span>
+      <span>📍 በድሬደዋ በቁጥር 03 ቢሮዎችን ከፍተን ቀን ከሌሊት እናገለግሎታለን ቢሮዎቻችን 1ኛ ሰይዶ ሆስፒታሉ አከባቢ 2ኛ ሳቢያን የእግር ኳስ ሜዳ ጀርባ ኤ ኤም ሞል ግራውንድ ወለል ላይ 3ኛ ሼል የቀድሞ መነሃሪያ ሰገነት ሆቴል ፊት ለፊት</span>
+      <span>🚀 በፈጣንና እምነት በተሞላው መስተንግዶአችን ይረካሉ </span>
+      <span>💼 በማናቸውም የአገልግሎት ስራ ሰሪንና አሰሪን እናገናኛለን። ለአገልግሎት ስራ ለመቀጠር የሚፈልጉ ሰዎች በቀጥታ በዚሁ ከታች ባሉት ፎርሞች በመሙላት ያመልክቱ</span>
+      <span>📞 በማንኛውም ሰዓት ልናገለግሎት ቃል ስለገባን በእነኚህ ስልክ ቁጥሮች ይደውሉልን 0942000007  0915172847  0923611111  0942770342  0915725839</span>
+    </div>
+  </div>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+
+    <!-- Sliding Photos (2 at a time) -->
+    <div class="hero-slider relative" id="heroSlider">
+      <div class="slide active">
+        <img src="image/logo.jpg" alt="">
+        <img src="image/2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="image/3.jpg" alt="">
+        <img src="image/4.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="image/5.jpg" alt="">
+        <img src="image/6.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="image/7.jpg" alt="">
+        <img src="image/8.jpg" alt="">
+      </div>
+    </div>
+    <!-- Multilingual KoboToolbox Links -->
+    <div class="max-w-4xl mx-auto px-6 py-12 text-center bg-white">
+      <h2 class="text-3xl font-bold mb-8">እቤትዎ ሆነው በማንኛውንም ዘርፍ አገልግሎት እንሰጦታለን</h2>
+      
+      <div class="space-y-8">
+        <div>
+          <h2 class="text-2xl font-semibold text-blue-700 mb-3">እባክዎት ለሚፈልጉት አገልግሎት ከታች ያለውን ማስፈንጠሪያ ተጭነውት ቋንቋዎትን በመምረጥ ሞልተው ይላኩልን</h2>
+          <!-- <a href="https://ee.kobotoolbox.org/x/YOUR_FORM_ID" target="_blank" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-2xl text-lg font-medium hover:bg-blue-700">ተጫኑኝ →</a> -->
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold text-blue-700 mb-3">Tajaajila barbaadaniif isaa kana gadii xuuqa guuta</h2>
+          <!-- <a href="https://ee.kobotoolbox.org/x/YOUR_FORM_ID" target="_blank" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-2xl text-lg font-medium hover:bg-blue-700">Xuqaa banadha →</a> -->
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold text-blue-700 mb-3">For any enquiry, open the link below</h2>
+          <a href="https://ee.kobotoolbox.org/x/N9lcpzR5" target="_blank" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-2xl text-lg font-medium hover:bg-blue-700">ይክፈቱ   Banaa  Open here →</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- WHAT WE HELP SECTION -->
+  <section id="kobo" class="py-16 bg-blue-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">ታማኝና ፈጣን ደላላ እንደሆንን ሰምተዋል። በምን መልኩ እንድንረዳዎት ይፈልጋሉ?</h2>
+      <p class="text-lg text-gray-600 mb-10">አስተማማኝ አገልግሎት ከዋስትና ጭምር እንሰጣለን </p>
+      
+      <!-- <div class="grid md:grid-cols-2 gap-6 text-left max-w-2xl mx-auto"> -->
+        <!-- <div class="flex gap-3 items-start"> -->
+          <!-- <span class="text-2xl">🏠</span> -->
+          <!-- <div><h4 class="font-semibold">Real Estate Brokerage</h4><p class="text-gray-600 text-sm">Buying, selling, and renting properties</p></div> -->
+        <!-- </div> -->
+        <!-- <div class="flex gap-3 items-start">
+          <span class="text-2xl">🤝</span>
+          <div><h4 class="font-semibold">Business Brokerage</h4><p class="text-gray-600 text-sm">Buying & selling of businesses and shops</p></div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl">🛡️</span>
+          <div><h4 class="font-semibold">Insurance Services</h4><p class="text-gray-600 text-sm">Vehicle, Health, Life & Property Insurance</p></div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-2xl">📦</span>
+          <div><h4 class="font-semibold">Import & Export Support</h4><p class="text-gray-600 text-sm">Documentation and business facilitation</p></div>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <a href="https://ee.kobotoolbox.org/x/YOUR_FORM_ID" target="_blank" class="inline-block bg-blue-600 text-white px-12 py-5 rounded-2xl text-xl font-semibold hover:bg-blue-700">Fill KoboToolbox Form Now →</a>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">አገልግሎቶቻችን</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-3xl text-center">
+          <i class="fas fa-home text-5xl text-blue-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold">ቤቶችንና ቦታዎችን ገዥና ሻጭ ማገናኘት፥ አከራይና ተከራይን ማገናኘት ወዘተ.......</h3>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-3xl text-center">
+          <i class="fas fa-handshake text-5xl text-blue-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold">ለቤት ወስጥ አገልግሎት፣ ለሆቴልና ለመሳሰሉትን ስራ ፈላጊዎችን ከቀጣሪ ጋር ማገናኘት</h3>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-3xl text-center">
+          <i class="fas fa-shield-alt text-5xl text-blue-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold">ሌሎች ማናቸውንም የድለላ አገልግሎትን እንሰጣለን</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICES -->
+  <section id="offices" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">ቢሮዎችን በድሬደዋ</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="office-card bg-white rounded-3xl overflow-hidden shadow">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" class="w-full h-56 object-cover" alt="ሰይዶ">
+          <div class="p-6">
+            <h3 class="font-bold text-xl">ሰይዶ </h3>
+            <p class="text-gray-600">ሳቢያን ሆስፒታል አከባቢ</p>
+            <p class="text-sm mt-2">📞 +251 942000007</p>
+          </div>
+        </div>
+        <div class="office-card bg-white rounded-3xl overflow-hidden shadow">
+          <img src="image/ammall.jpg" class="w-full h-56 object-cover" alt="ኤ ኤም ሞል">
+          <div class="p-6">
+            <h3 class="font-bold text-xl">ሳቢያን ኳስ ሜዳ</h3>
+            <p class="text-gray-600">ኤ ኤም ሞል ግራውንድ ወለል</p>
+            <p class="text-sm mt-2">📞 +251 942000007</p>
+          </div>
+        </div>
+        <div class="office-card bg-white rounded-3xl overflow-hidden shadow">
+          <img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9" class="w-full h-56 object-cover" alt="ሼል">
+          <div class="p-6">
+            <h3 class="font-bold text-xl">ሼል የቀድሞ መነሃሪያ</h3>
+            <p class="text-gray-600">ሰገነት ሆቴል ፊት ለፊት</p>
+            <p class="text-sm mt-2">📞 +251 942000007</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST FORM AT BOTTOM -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="request-form-box p-10">
+        <h2 class="text-3xl font-bold text-center mb-8">ጥያቄ፣ ሀሳብና አስተያየት ካሎት ሞልተው ይላኩልን</h2>
+        <form id="requestForm" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <input type="text" id="name" placeholder="ሙሉ ስሞትን ይሙሉ" required class="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
+            <input type="tel" id="phone" placeholder="ስልክ ቁጥሮትን ያስገቡ" required class="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
+          </div>
+          <input type="email" id="email" placeholder="ኤሜይል ካሎት ያስገቡ" class="w-full px-6 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-blue-500">
+          <textarea id="message" rows="6" placeholder="መልዕክቶትን እዚህ ያስፍሩ..." required class="w-full px-6 py-4 border border-gray-300 rounded-3xl focus:outline-none focus:border-blue-500"></textarea>
+          
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-2xl text-xl font-semibold">ይላኩ</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-950 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-2xl font-bold text-white mb-2">አሌክስ ደላላ ድሬ</p>
+      <p>Dire Dawa, Ethiopia</p>
+      <div class="flex justify-center gap-8 mt-8 text-3xl">
+        <a href="https://t.me/alex_delala" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.facebook.com/share/18dGxHVCLH/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@alex_delala" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/251942000007" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="mt-10 text-sm">© 2026 መብቱ በህግ የተጠበቀ ነው</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    // Slider
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('#heroSlider .slide');
+
+    function showSlide() {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[currentSlide].classList.add('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 10000);
+
+    // Form Submission
+    document.getElementById('requestForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = "Sending...";
+      btn.disabled = true;
+
+      const formData = {
+        timestamp: new Date().toLocaleString(),
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value || "Not Provided",
+        message: document.getElementById('message').value
+      };
+
+      try {
+        await fetch("https://script.google.com/macros/s/YOUR_WEB_APP_URL/exec", {
+          method: 'POST',
+          mode: 'no-cors',
+          body: JSON.stringify(formData)
+        });
+        alert("✅ Request sent successfully!");
+        e.target.reset();
+      } catch (err) {
+        alert("❌ Failed to send. Please try again.");
+      } finally {
+        btn.textContent = "Send Request";
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
